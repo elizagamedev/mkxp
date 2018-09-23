@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 2.8.11)
 Project(mkxp)
 
+include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+conan_basic_setup()''')
+
 ## Setup options ##
 
 option(SHARED_FLUID "Dynamically link fluidsynth at build time" OFF)
